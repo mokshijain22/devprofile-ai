@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { API } from "../config";
-import { gi, pj, sc } from "../utils";
+import { gi, pj, sc ,pc} from "../utils";
 import { ChatWidget, PaymentGate, RadarChart, SaveBar, ScoreRing } from "../components/common";
 
 function LinkedInPanel({ paidFor, onPaidUpdate, rzpKeyId, rzpAvailable }) {
