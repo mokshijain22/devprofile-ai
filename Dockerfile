@@ -1,4 +1,3 @@
-# ── Stage 1: Build React frontend ─────────────────────────────────────────
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -9,7 +8,6 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# ── Stage 2: Production server ─────────────────────────────────────────────
 FROM node:20-alpine AS runner
 
 WORKDIR /app
@@ -19,6 +17,7 @@ RUN npm install --omit=dev
 
 COPY --from=builder /app/dist ./dist
 COPY server.js ./
+COPY prompts.js ./
 
 ENV PORT=3001
 ENV NODE_ENV=production
