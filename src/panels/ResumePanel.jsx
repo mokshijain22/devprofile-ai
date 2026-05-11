@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { API } from "../config";
-import { gi, pj, sc ,pc} from "../utils";
+import { LC, gi, pj, sc, pc } from "../utils";
 import { ChatWidget, PaymentGate, RadarChart, SaveBar, ScoreRing } from "../components/common";
 
 function ResumePanel({ paidFor, onPaidUpdate, rzpKeyId, rzpAvailable }) {
