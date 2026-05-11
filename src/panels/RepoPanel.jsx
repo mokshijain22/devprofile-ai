@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { API, GH_PROXY } from "../config";
-import { LC, gi, pj, sc } from "../utils";
+import { LC, gi, pj, sc ,pc} from "../utils";
 import { ChatWidget, PaymentGate, RadarChart, SaveBar, ScoreRing } from "../components/common";
 import RepoPicker from "../components/RepoPicker";
 
