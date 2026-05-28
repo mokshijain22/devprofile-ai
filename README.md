@@ -258,7 +258,7 @@ Mokshi Jain
 AI/ML Engineering Student
 
 GitHub: https://github.com/mokshijain22
-Portfolio: https://jainparichay.in
+
 
 ---
 
